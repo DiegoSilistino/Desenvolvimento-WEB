@@ -1,0 +1,2 @@
+Caso a visualização do arquivo não funcione favor extrair a pasta e deixar os arquivos na área de trabalho. 
+Fazendo isso, o caminho do CSS e das imagens vão funcionar.
