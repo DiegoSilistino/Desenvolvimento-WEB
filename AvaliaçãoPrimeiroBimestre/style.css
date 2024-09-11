@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#Negrito_Italico{
+    font-style: italic;
+    font-weight: bold;
+}
