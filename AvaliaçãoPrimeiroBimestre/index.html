@@ -12,16 +12,24 @@
 </head>
 
 <body>
-    <header>
-        <h1>Diego de Souza Silistino</h1>
-    </header>
+        <header>
+            <h1>Diego de Souza Silistino</h1>
+            <nav>
+              <ul>
+                <li><a href="#footer">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>   
+        
+              </ul>
+            </nav>
+          </header>
 
     <section>
         <article>
             <h2>Habilidades:</h2>
             <p>Sou um líder com uma <strong><em>boa lógica, excelentes habilidades de comunicação e proatividade</em></strong>.. Essas habilidades me possibilitam resolver problemas de forma mais rápida e eficaz, além de tomar decisões com segurança, sempre buscando o melhor resultado para a equipe.</p>
             <ol>
-                <li id="Negrito_Italico">Liderança</li>
+                <li>Liderança</li>
                 <li>Boa lógica</li>
                 <li>Comunicação</li>
                 <li>Proativo</li>
@@ -30,15 +38,15 @@
 
         <article>
             <h2>Interesses:</h2>
-            <p style="text-align:left;">Tenho interesse em linguagens web e desktop, como <span id="Negrito_Italico">Delphi e PHP</span>. Além disso, nas horas vagas, estou desenvolvendo um jogo.</p>
+            <p style="text-align:left;">Tenho interesse em linguagens web e desktop, como  <strong><em>Delphi e PHP </strong></em>. Além disso, nas horas vagas, estou desenvolvendo um jogo.</p>
             <ul>
                 <li>Delphi</li>
                 <li>PHP</li>
             </ul>
         </article>
 
-        <div style="width: 60%;" class="container">
-            <table class="table table-bordered table-hover">
+        <div class="container">
+            <table class="table table-bordered table-hover"> <!--  -->
                 <thead>
                     <tr>
                         <th>Linguagens</th>
@@ -75,7 +83,7 @@
     </nav>
     
     <footer>
-    <div class="form-group">
+    <div id="footer" class="form-group">
         <h3>Formulario para Contato</h3>
         <form action="https://formspree.io/f/mpwaebaw" method="POST">
             <label for="nome">Nome:</label>
@@ -95,7 +103,7 @@
             <input type="checkbox" name="interesse" id="front-end" required> Front-End<br>
             <input type="checkbox" name="interesse" id="back-end" required> Back-End<br><br>
 
-            <label for="mensagem">Mensagem:</label>
+            <label for="mensagem">Motivo do contato:</label>
             <textarea class="form-control" name="mensagem" id="mensagem" required></textarea><br><br>
 
             <button type="submit">Enviar</button>
