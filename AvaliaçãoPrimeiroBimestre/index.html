@@ -12,12 +12,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 </head>
 
-<body> 
+<body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> <!--Menu!-->
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Diego Silistino</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -33,22 +34,21 @@
             </div>
         </nav>
     </header>
-
-    <section id="sobre" class="container p-5 my-5 border">
+    <section id="sobre" class="container p-5 my-3 border">
         <hr>
-        <h1 class="text-center">Sou desenvolvedor!</h1> 
+        <h1 class="text-center bg-dark p-3 text-white">Sou desenvolvedor!</h1>
         <hr>
         <br>
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-header">Habilidades</h5>
+                        <h5 class="card-header text-center bg-dark p-3 text-white">Habilidades</h5>
                         <br>
                         <article>
-                            <p>Sou um líder com uma <strong><em>boa lógica, excelentes habilidades de comunicação e
+                            <p>Liderança com uma <strong><em>boa lógica, excelentes comunicação e
                                         proatividade</em></strong>.</p>
-                            <p>Habilidades me possibilitam resolver problemas de forma mais rápida e eficaz, sempre
+                            <p>Resolver problemas de forma mais rápida e eficaz, sempre
                                 buscando o melhor resultado para a equipe.</p>
                             <ol>
                                 <li>Boa lógica</li>
@@ -60,10 +60,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-header">Interesses</h5>
+                        <h5 class="card-header text-center bg-dark p-3 text-white">Interesses</h5>
                         <br>
                         <article>
                             <p style="text-align:left;">Tenho interesse em linguagens web e desktop, como
@@ -81,7 +81,7 @@
             <div class="col-sm-5">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-header">Conhecimentos</h5>
+                        <h5 class="card-header text-center bg-dark p-3 text-white">Conhecimentos</h5>
                         <br>
                         <table class="table table-bordered table-hover table-responsive-sm">
                             <thead>
@@ -113,56 +113,65 @@
                 </div>
             </div>
         </div>
-        <br>
+        <br id="contato">
         <hr>
-        <h3 class="text-center">Entre em contato comigo!</h3>
+        <h3 class="text-center bg-dark p-3 text-white">Entre em contato comigo!</h3>
         <hr>
+        <div class="card">
+            <div class="card-body">
+                    <div class="row">
+                        <form action="https://formspree.io/f/mpwaebaw" method="post">
+                            <div class="col">
+                                <label class="label" for="nome">Nome</label>
+                                <input class="form-control" type="text" name="nome" id="nome" required
+                                    placeholder="Digite seu nome">
+                            </div>
+                            <div class="col">
+                                <label class="label" for="email">E-mail</label>
+                                <input class="form-control" type="email" name="email" id="email" required
+                                    placeholder="Digite seu e-mail">
+                            </div>
+                            <div class="col">
+                                <label class="label" for="telefone">Telefone</label>
+                                <input class="form-control" type="tel" name="telefone" id="telefone"
+                                    placeholder="(99) 99999-9999" data-mask-for-telefone minlength="10" maxlength="11"
+                                    title="Número de telefone precisa ser no formato (99) 9999-9999" required>
+                            </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label class="label" for="sexo">Sexo</label><br>
+                            <input type="radio" id="masculino" name="sexo" value="masculino"> Masculino<br>
+                            <input type="radio" id="feminino" name="sexo" value="feminino"> Feminino<br><br>
+                        </div>
+                        <div class="col">
+                            <label class="label" for="interesse">Interesses do contato</label><br>
+                            <input type="checkbox" name="interesse" id="front-end"> Front-End<br>
+                            <input type="checkbox" name="interesse" id="back-end"> Back-End<br><br>
+                        </div>
+                        <div class="col">
+                            <label class="label" for="mensagem">Motivo do contato</label>
+                            <textarea class="form-control" name="mensagem" id="mensagem" required></textarea><br>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-outline-dark">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <br>
-        <form id="contato" action="https://formspree.io/f/mpwaebaw" method="post">
-            <div class="row">
-                <div class="col">
-                    <label class="label" for="nome">Nome:</label>
-                    <input class="form-control" type="text" name="nome" id="nome" required>
-                </div>
-                <div class="col">
-                    <label class="label" for="email">E-mail:</label>
-                    <input class="form-control" type="email" name="email" id="email" required>
-                </div>
-                <div class="col">
-                    <label class="label" for="telefone">Telefone:</label>
-                    <input class="form-control" type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999"
-                        data-mask-for-telefone minlength="10" maxlength="11"
-                        title="Número de telefone precisa ser no formato (99) 9999-9999" required>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <label class="label" for="sexo">Sexo:</label><br>
-                    <input type="radio" id="masculino" name="sexo" value="masculino"> Masculino<br>
-                    <input type="radio" id="feminino" name="sexo" value="feminino"> Feminino<br><br>
-                </div>
-                <div class="col">
-                    <label class="label" for="interesse">Interesses do contato:</label><br>
-                    <input type="checkbox" name="interesse" id="front-end"> Front-End<br>
-                    <input type="checkbox" name="interesse" id="back-end"> Back-End<br><br>
-                </div>
-                <div class="col">
-                    <label class="label" for="mensagem">Motivo do contato:</label>
-                    <textarea class="form-control" name="mensagem" id="mensagem" required></textarea><br>
-                </div>
-            </div>
-            <center><button type="submit" class="btn btn-dark">Enviar</button></center>
-        </form>
     </section>
-    <footer class="text-center">
+
+    <footer class="text-center"><!--Rodapé-->
         <a href="https://github.com/DiegoSilistino/Desenvolvimento-WEB/tree/main/AvaliaçãoPrimeiroBimestre"
             target="_blank">
             <img src="/images/github.png" alt="Meu GitHub">
         </a>
         <a href="https://www.linkedin.com/in/diego-de-souza-silistino-4770b224b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"><img src="/images/linkedin.png" alt="Meu Linkedin"></a>
-        <p><b>Desenvolvido por Diego Silistino - 2024</b></p>
+        <p><b>Desenvolvido Diego Silistino - 2024</b></p>
     </footer>
 </body>
 
