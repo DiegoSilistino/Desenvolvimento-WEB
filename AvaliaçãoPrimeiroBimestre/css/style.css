@@ -1,0 +1,15 @@
+.label{
+    font-weight: bold;
+}
+
+a img {
+    display: inline-block;
+    margin: 20px auto;
+    width: auto;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+a img:hover {
+    transform: scale(1.1);
+}
